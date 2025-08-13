@@ -1,0 +1,15 @@
+ALGORITMO PARA PREPARAR UM MIOJO
+
+1 - Pegar uma panela.
+2 - Pegar o pacote de miojo.
+3 - Encher a panela com água.
+4 - Colocar a panela na boca do fogão.
+5 - Ligar o fogo.
+SE água ferveu
+	6 - Colocar o macarrão do miojo na panela.
+SENÃO
+	6 - Esperar mais um pouco
+7 - Cozinhar o macarrão.
+8 - Adicionar o sachê de tempero ao macarrão.
+9 - Colocar o miojo no prato.
+10 - Comer.
