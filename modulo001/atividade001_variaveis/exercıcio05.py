@@ -1,0 +1,5 @@
+cores = ("vermelho", "verde", "azul", "verde")
+cores = list(cores)
+cores.pop()
+cores.append('amarelo')
+print(cores)
