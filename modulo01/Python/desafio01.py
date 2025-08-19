@@ -3,4 +3,4 @@ quantidade = int(input('Quantidade comprada: '))
 dinheiro = float(input('Dinheiro recebido: '))
 
 troco = dinheiro - (preco * quantidade)
-print(f'TRCO = {troco}')
+print(f'TROCO = {troco}')
