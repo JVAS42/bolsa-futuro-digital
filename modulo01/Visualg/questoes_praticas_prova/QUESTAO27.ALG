@@ -1,13 +1,13 @@
 Algoritmo "QUESTAO27"
 
-// Autor(a)    : João Victor de Araújo Silva
+// Autor(a)    : JoÃ£o Victor de AraÃºjo Silva
 // Data atual  : 25/08/2025
 Var
-// Seção de Declarações das variáveis 
-nota: inteiro
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
+nota: real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 escreva("Nota: ")
 leia(nota)
 
@@ -15,10 +15,11 @@ se (nota <= 6) entao
    se (nota < 4) entao
       escreva("Reprovado")
    senao
-        escreva("Recuperação")
+        escreva("RecuperaÃ§Ã£o")
    fimse
 senao
      escreva("Aprovado")
 fimse
+
 
 Fimalgoritmo
