@@ -1,19 +1,20 @@
 Algoritmo "QUESTAO25"
 
-// Autor(a)    : João Victor de Araújo Silva
+// Autor(a)    : JoÃ£o Victor de AraÃºjo Silva
 // Data atual  : 25/08/2025
 Var
-// Seção de Declarações das variáveis 
-senha, confirmacao: caractere
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
+senha1, senha2, confirmacao: caractere
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-escreva("Informe sua senha: ")
-leia(senha)
-escreva("Confirme sua senha: ")
-leia(confirmacao)
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
+escreva("Informe a PRIMEIRA senha: ")
+leia(senha1)
+escreva("Informe a SEGUNDA senha: ")
+leia(senha2)
+confirmacao <- "1234"
 
-se (senha = confirmacao) entao
+se (senha1 = confirmacao) e (senha2 = confirmacao) entao
    escreva("Login efetuado")
 senao
      escreva("Senha incorreta")
