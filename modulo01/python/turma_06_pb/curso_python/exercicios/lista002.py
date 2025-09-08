@@ -120,6 +120,7 @@ print(f'MEDIA = {media}')
 
 # QUESTAO 20
 num = int(input('Informe um número: '))
+print(f'{num} é ' + ('par' if num % 2 == 0 else 'impar')) # Operadores Ternários
 verifica = num % 2 == 0
 print(f'É par: {verifica}')
 
