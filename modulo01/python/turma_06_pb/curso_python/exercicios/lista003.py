@@ -284,8 +284,50 @@ multiplo = int(multiplo)
 print('Múltiplo de 3 e 5' if multiplo % 2 == 0 and multiplo % 3 == 0 else 'Não é múltiplo')
 
 # QUESTÃ0 28 #
+print('QUESTÃO 28')
+
+peso = float(input("Digite seu peso (kg): "))
+altura = float(input("Digite sua altura (m): "))
+
+imc = peso / (altura ** 2)
+print(f"\nSeu IMC é: {imc:.2f}")
+if imc < 18.5:
+    print("Abaixo do peso")
+elif 18.5 <= imc < 24.9:
+    print("Peso normal")
+elif 25 <= imc < 29.9:
+    print("Sobrepeso")
+elif 30 <= imc < 34.9:
+    print("Obesidade grau I")
+elif 35 <= imc < 39.9:
+    print("Obesidade grau II")
+else:
+    print("Obesidade grau III (mórbida)")
 
 # QUESTÃO 29 #
+print('QUESTÃO 29')
+n = int(input("Digite um número: "))
+
+if n <= 1:
+    print("Não é primo")
+elif n == 2:
+    print("É primo")
+elif n % 2 == 0:
+    print("Não é primo")
+elif n == 3:
+    print("É primo")
+elif n % 3 == 0:
+    print("Não é primo")
+elif n == 5:
+    print("É primo")
+elif n % 5 == 0:
+    print("Não é primo")
+elif n == 7:
+    print("É primo")
+elif n % 7 == 0:
+    print("Não é primo")
+else:
+    print("É primo")
 
 # QUESTÃO 30 #
 print('QUESTÃO 30')
