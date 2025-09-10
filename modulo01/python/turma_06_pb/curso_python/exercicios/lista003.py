@@ -308,26 +308,11 @@ else:
 print('QUESTÃO 29')
 n = int(input("Digite um número: "))
 
-if n <= 1:
-    print("Não é primo")
-elif n == 2:
-    print("É primo")
-elif n % 2 == 0:
-    print("Não é primo")
-elif n == 3:
-    print("É primo")
-elif n % 3 == 0:
-    print("Não é primo")
-elif n == 5:
-    print("É primo")
-elif n % 5 == 0:
-    print("Não é primo")
-elif n == 7:
-    print("É primo")
-elif n % 7 == 0:
-    print("Não é primo")
+if n%n == 0 and (n%2 == 0 or n%3 == 0):
+    print('Não é primo')
 else:
-    print("É primo")
+    print('É primo')
+
 
 # QUESTÃO 30 #
 print('QUESTÃO 30')
