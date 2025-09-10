@@ -12,4 +12,5 @@ Para armazenar as atividades e projetos da Bolsa Futuro Digital realizada pela S
 
 ### 📋 Checklist dos Módulos
 
-- [ ] Módulo 1
+- [x] Módulo 1 - Lógica com VisualG
+- [ ] Módulo 2 - Introdução a Python
