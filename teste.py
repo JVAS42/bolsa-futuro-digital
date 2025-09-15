@@ -1,5 +1,4 @@
-print('QUESTÃO 12')
-nome = input('NOME: ')
-idade = int(input('IDADE: '))
-frase = "Nome: %s | Idade: %d" % (nome, idade)
-print(frase)
+NOME = 'JOAO'
+print('QUESTÃO 6')
+CONFERINDO = 'a' in NOME
+print(CONFERINDO)
