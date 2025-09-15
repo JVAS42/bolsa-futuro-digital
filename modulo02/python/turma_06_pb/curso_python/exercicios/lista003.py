@@ -313,7 +313,6 @@ if n%n == 0 and (n%2 == 0 or n%3 == 0):
 else:
     print('É primo')
 
-
 # QUESTÃO 30 #
 print('QUESTÃO 30')
 
