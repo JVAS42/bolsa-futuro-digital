@@ -1,4 +1,3 @@
-NOME = 'JOAO'
-print('QUESTÃO 6')
-CONFERINDO = 'a' in NOME
-print(CONFERINDO)
+frase = 'Ola, mundo!'
+
+print(frase)
