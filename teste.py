@@ -1,15 +1,6 @@
-vogais = ['a', 'e', 'i', 'o', 'u']
+i15 = 1
 
-for i in vogais:
-    print(i)
-
-for indice, valor in enumerate(vogais):
-    print(indice, valor)
-
-for i in range(0, len(vogais), 1):
-    print(vogais[i])
-
-cont = 0
-while cont < len(vogais):
-    print(vogais[cont])
-    cont += 1
+while i15 <= 100:
+    if i15 % 10 == 0:
+        print(i15)
+    i15 += 1
