@@ -128,3 +128,144 @@ while i15 <= 100:
     if i15 % 10 == 0:
         print(i15)
     i15 += 1
+
+# QUESTÃO 16 #
+i16 = 0
+
+while i16 < 21:
+    print(i16)
+    i16 += 1
+
+# QUESTÃO 17 #
+palavra = input('Digite uma palavra: ')
+i17 = 0
+
+while i17 <= len(palavra):
+    print(palavra[i17])
+
+# QUESTÃO 18 #
+num_user4 = int(input('Informe um numero: '))
+
+soma = 0
+i18 = 1
+
+while i18 <= num_user4:
+    soma += i18
+
+print(f'SOMA = {soma}')
+
+# QUESTÃO 19 #
+while True:
+    try:
+        num_user5 = int(input('Digite um número: '))
+
+        if num_user5 < 0:
+            print('Fim do programa')
+            break
+    except:
+        print('ERRO! Tente novamente', end=' ')
+
+# QUESTÃO 20 #
+palavra2 = input('Informe uma palavra: ')
+i20 = 0
+
+while i20 < len(palavra):
+    i20 += 1
+
+print(f'A PALAVRA {palavra} TEM {i20} LETRAS')
+
+# QUESTÃO 21 #
+i21 = 50
+
+while i21 < 101:
+    print(i21)
+    i21 += 1
+
+# QUESTÃO 22 #
+i22 = 2
+
+while i22 < 31:
+    print(i22)
+    i22 += 2
+
+# QUESTÃO 23 #
+i23 = 0
+
+while i23 < 10:
+    num_user6 = int(input('Digite um número: '))
+    if num_user6 % 2 == 0:
+        print(num_user6)
+
+# QUESTÃO 24 #
+i24 = 1
+multiplo = 3
+
+while i24 <= 15:
+    print(multiplo)
+    multiplo += 3
+    i24 += 1
+
+# QUESTÃO 25 #
+cont = 0
+
+while True:
+    nota = float(input('Informe as notas [DIGITE -1 para encerrar]'))
+
+    if nota == -1:
+        break
+
+    cont += 1
+
+# QUESTÃO 26 #
+num_user7 = int(input('Digite um número: '))
+
+if num_user7 < 0:
+    print('Fatorial não é definido para números negativos.')
+else:
+    fatorial = 1
+    contador = num_user7
+
+    while contador > 1:
+        fatorial *= contador
+        contador -= 1
+
+    print(f'O fatorial de {num_user7} é {fatorial}.')
+
+# QUESTÃO 27 #
+frase = input("Digite uma frase: ")
+i27 = 0
+vogais = 0
+while i27 < len(frase):
+    if frase[i27].lower() in 'aeiou':
+        vogais += 1
+    i27 += 1
+print("Total de vogais:", vogais)
+
+# QUESTÃO 28 #
+soma28 = 0
+while soma28 <= 50:
+    num = int(input("Digite um número: "))
+    soma28 += num
+print("Soma final:", soma28)
+
+# QUESTÃO 29 #
+i29 = 1
+soma_idades = 0
+while i29 <= 5:
+    idade = int(input(f"Digite a idade {i29}: "))
+    soma_idades += idade
+    i29 += 1
+media = soma_idades / 5
+print("Média das idades:", media)
+
+# QUESTÃO 30 #
+numeros = list()
+entrada = input("Digite um número ou 'fim' para encerrar: ")
+while entrada.lower() != 'fim':
+    numeros.append(int(entrada))
+    entrada = input("Digite um número ou 'fim' para encerrar: ")
+print("Números digitados:")
+i30 = 0
+while i30 < len(numeros):
+    print(numeros[i30])
+    i30 += 1
