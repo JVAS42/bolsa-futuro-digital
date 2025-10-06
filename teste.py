@@ -1,6 +1,9 @@
-for i in range(10, 0, -1):
-    print(i)
+fator = int(input('Informe um número: '))
+fatorial = 1
+for i in range(fator, 1, -1):
+    fatorial *= i
 
+print(fatorial)
 
 # QUESTÃO 1 #
 # QUESTÃO 2 #

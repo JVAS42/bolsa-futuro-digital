@@ -47,10 +47,12 @@ for i in range(0, 10):
 print(f'MEDIA = {soma/10}')
 
 # QUESTÃO 10 #
-'''
-fatorial = int(input('Informe um valor para fatorial: '))
-for i in range(fatorial, 0, -1):
-'''
+fator = int(input('Informe um número: '))
+fatorial = 1
+for i in range(fator, 1, -1):
+    fatorial *= i
+
+print(fatorial)
     
 
 # QUESTÃO 11 #
