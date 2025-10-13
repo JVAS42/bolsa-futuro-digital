@@ -1,9 +1,8 @@
-fator = int(input('Informe um número: '))
-fatorial = 1
-for i in range(fator, 1, -1):
-    fatorial *= i
-
-print(fatorial)
+palavra = 'PaRaLeLePíPeDo'
+for i in range(0, len(palavra)):
+    if palavra[i] == palavra[i].upper():
+        continue
+    print(palavra[i])
 
 # QUESTÃO 1 #
 # QUESTÃO 2 #
