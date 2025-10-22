@@ -168,11 +168,11 @@ class Celular:
         self.bateria = bateria
 
     def carregar(self, valor_carga):
-        self.bateria = bateria + valor_carga
+        self.bateria += valor_carga
         if self.bateria > 100:
             self.bateria = 100
 
-celular = Celular()
+celular = Celular(20)
 print(celular.bateria)
 
 celular.carregar(50)
@@ -294,3 +294,142 @@ valor_area = r1.area()
 print(f"A área do retângulo é: {valor_area}")
 
 # QUESTÃO 21 #
+class Aluno:
+    pass
+
+    def media(self, n1, n2):
+        return (n1+n2)/2
+    
+a1 = Aluno()
+print(f'MÉIDA = {a1.media(10, 9)}')
+
+# QUESTÃO 22 #
+class Produto:
+    def __init__(self, nome, preco):
+        self.nome = nome
+        self.preco = preco
+    
+    def desconto(self, preco):
+        self.preco = self.preco * 0.9
+    
+p1 = Produto('Celular', 1000.00)
+
+print(f'PRODUTO: {p1.nome} PREÇO: R${p1.preco}')
+p1.desconto(p1.preco)
+print(f'PRODUTO: {p1.nome} PREÇO c/ DESCONTO: R${p1.preco}')
+
+# QUESTÃO 23 #
+class Pessoa:
+    def __init__(self, idade):
+        self.idade = idade
+
+    def maior_idade(self, idade):
+        if self.idade < 18:
+            return False
+        else:
+            return True
+        
+p1 = Pessoa(20)
+p2 = Pessoa(15)
+
+
+print(f'Pessoa 1 é maior de idade? {p1.maior_idade(p1.idade)}')
+print(f'Pessoa 2 é maior de idade? {p2.maior_idade(p2.idade)}')
+
+# QUESTÃO 24 #
+class Banco:
+    def __init__(self, clientes):
+        self.clientes = clientes
+
+    def adicionar(self, nome):
+        self.clientes.append(nome)
+
+bb = Banco([])
+bb.adicionar('Joao')
+print(bb.clientes)
+bb.adicionar('Arthur')
+bb.adicionar('Caio')
+print(bb.clientes)
+
+# QUESTÃO 25 #
+class Motor:
+    ligado = False
+
+    def ligar_motor(self):
+        self.ligado = True
+
+motor = Motor()
+
+print(motor.ligado)
+motor.ligar_motor()
+print(motor.ligado)
+
+# QUESTÃO 26 #
+class Casa:
+    def __init__(self, cor, tamanho):
+        self.cor = cor
+        self.tamanho = tamanho
+
+casinha = Casa("Verde", "Pequeno")
+casa = Casa("Azul", "Médio")
+
+print(f'CASINHA TEM COR: {casinha.cor} E TAMANHO: {casinha.tamanho}')
+print(f'CASA TEM COR: {casinha.cor} E TAMANHO: {casinha.tamanho}')
+
+# QUESTÃO 27 #
+class Pessoa:
+    def __init__(self):
+        print('Pessoa Criada')
+
+p1 = Pessoa()
+p2 = Pessoa()
+
+# QUESTÃO 28 #
+class Carro:
+    def __init__(self, estado):
+        self.estado = estado
+    
+    def mostrar_estado(self):
+        print(f'ESTADO DO CARRO: {self.estado}')
+
+fusca = Carro("Usado")
+ferrari = Carro("Novo")
+
+fusca.mostrar_estado()
+ferrari.mostrar_estado()
+
+# QUESTÃO 29 #
+class Computador:
+    def __init__(self, ligado):
+        self.ligado = ligado
+
+    def ligar(self):
+        self.ligado = True
+
+    def info(self):
+        if self.ligado == True:
+            print('LIGADO')
+        else:
+            print('DEDLIGADO')
+
+notebook = Computador(False)
+notebook.info()
+notebook.ligar()
+notebook.info()
+
+# QUESTÃO 30 #
+class Aluno:
+    def __init__(self):
+        pass
+
+    def situacao(self, nota):
+        if nota >= 7:
+            print('APROVADO')
+        else:
+            print('REPROVADO')
+
+a1 = Aluno()
+a2 = Aluno()
+
+a1.situacao(9)
+a2.situacao(5)
