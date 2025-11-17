@@ -1,16 +1,9 @@
-# QUESTÃO 30 #
-class Aluno:
-    def __init__(self):
-        pass
+class Carro:
+    def __init__(self, cor):
+        self.cor = cor
 
-    def situacao(self, nota):
-        if nota >= 7:
-            print('APROVADO')
-        else:
-            print('REPROVADO')
+fusca = Carro("Azul")
+ferrari = Carro('vermelho')
 
-a1 = Aluno()
-a2 = Aluno()
-
-a1.situacao(9)
-a2.situacao(5)
+print(fusca)
+print(ferrari)
