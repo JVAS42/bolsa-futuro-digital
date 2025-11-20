@@ -1,9 +1,4 @@
-class Carro:
-    def __init__(self, cor):
-        self.cor = cor
+def gerar_email(nome, sobrenome):
+    return f"{nome}.{sobrenome}@email.com"
 
-fusca = Carro("Azul")
-ferrari = Carro('vermelho')
-
-print(fusca)
-print(ferrari)
+print(gerar_email("joao", "araujo"))
