@@ -1,0 +1,97 @@
+/* Criando a tabela */
+
+CREATE TABLE clientes (
+    id INT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    cidade VARCHAR(100),
+    idade INT,
+    datacadastro DATE
+);
+
+INSERT INTO clientes (id, nome, email, cidade, idade, datacadastro) VALUES
+(1, 'Ana Silva', 'ana@gmail.com', 'Campina Grande', 22, '2024-01-10'),
+(2, 'João Pedro', 'joao@hotmail.com', 'João Pessoa', 30, '2024-03-02'),
+(3, 'Pedro Lima', 'pedro@gmail.com', 'Campina Grande', 22, '2024-04-20'),
+(4, 'Carla Souza', 'carla@yahoo.com', 'Natal', 27, '2024-02-15');
+
+/* QUESTÃO 1 */
+SELECT * FROM usuarios;
+
+/* QUESTÃO 2 */
+SELECT nome, cidade FROM usuarios;
+
+/* QUESTÃO 3 */
+SELECT * FROM usuarios
+WHERE cidade = 'Campina Grande';
+
+/* QUESTÃO 4 */
+SELECT * FROM usuarios
+WHERE idade > 25;
+
+/* QUESTÃO 5 */
+SELECT * FROM usuarios
+WHERE idade BETWEEN 20 AND 25;
+
+/* QUESTÃO 6 */
+SELECT * FROM usuarios
+WHERE nome LIKE 'A%';
+
+/* QUESTÃO 7 */
+SELECT * FROM usuarios
+WHERE nome LIKE '%a';
+
+/* QUESTÃO 8 */
+SELECT * FROM usuarios
+WHERE nome LIKE '%Sil%';
+
+/* QUESTÃO 9 */
+SELECT * FROM usuarios
+WHERE YEAR(data_cadastro) = 2024;
+
+/* QUESTÃO 10 */
+SELECT * FROM usuarios
+WHERE cidade <> 'Campina Grande';
+
+/* QUESTÃO 11 */
+SELECT * FROM usuarios
+WHERE email LIKE '%@gmail.com';
+
+/* QUESTÃO 12 */
+SELECT * FROM usuarios
+WHERE nome LIKE '%o%';
+
+/* QUESTÃO 13 */
+SELECT * FROM usuarios
+WHERE data_cadastro > '2024-02-01';
+
+/* QUESTÃO 14 */
+SELECT * FROM usuarios
+WHERE idade = 22
+AND cidade = 'Campina Grande';
+
+/* QUESTÃO 15 */
+SELECT * FROM usuarios
+WHERE cidade IN ('Campina Grande', 'João Pessoa');
+
+/* QUESTÃO 16 */
+SELECT * FROM usuarios
+WHERE nome LIKE '_____';
+
+/* QUESTÃO 17 */
+SELECT * FROM usuarios
+WHERE email NOT LIKE '%gmail%';
+
+/* QUESTÃO 18 */
+SELECT * FROM usuarios
+ORDER BY data_cadastro DESC;
+
+/* QUESTÃO 19 */
+SELECT * FROM usuarios
+WHERE nome LIKE 'C%' OR nome LIKE 'P%';
+
+/* QUESTÃO 20 */
+SELECT * FROM usuarios
+WHERE data_cadastro = (
+    SELECT MAX(data_cadastro) FROM usuarios
+);
